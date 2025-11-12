@@ -1,0 +1,87 @@
+* {
+    color: pink;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: white;
+}
+
+.black_bg {
+    background-color: black;
+    color: white;
+}
+
+.cta {
+    padding: 16px 32px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_spaced {
+    justify-content: space-between;
+}
+
+.card_holder {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.service_card {
+    max-width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.project_card {
+    max-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+}
+
+.testimony_card {
+    max-width: 280px;
+    background-color: gray;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+nav,
+section,
+footer {
+    padding: 64px 24px;
+
+    h2 {
+        margin-bottom: 64px;
+    }
+}
