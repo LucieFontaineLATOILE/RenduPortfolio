@@ -1,8 +1,9 @@
 * {
-    color: pink;
+    /* color: pink; */
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 400;
 }
 
 .black_bg {
@@ -17,8 +18,8 @@
     text-decoration: none;
     width: fit-content;
 
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .container {
@@ -46,15 +47,28 @@
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 24px;
 }
 
 .service_card {
     max-width: 250px;
 
+    img {
+        width: 100px;
+    }
+
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 8px;
+
+    h3 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
 }
 
 .project_card {
@@ -62,22 +76,59 @@
 
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
     text-align: left;
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
 }
 
 .testimony_card {
-    max-width: 280px;
-    background-color: gray;
-    padding: 16px;
+    max-width: 250px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 32px;
 
     display: flex;
     flex-direction: column;
+    gap: 32px;
     text-align: left;
+
+    img {
+        width: 32px;
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .work_title {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .flex_row {
+        gap: 16px;
+    }
 }
 
 a {
     color: white;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 28px;
 }
 
 section,
@@ -91,12 +142,11 @@ footer {
 
 nav {
     padding: 24px 24px;
-
 }
 
 #clickable_logo {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -117,14 +167,46 @@ nav {
     justify-content: space-between;
 
     h1 {
-        font-weight: 400;
-
         p {
-            font-size: 24px;
+            font-size: 18px;
+            line-height: 26px;
         }
 
         strong {
-            font-size: 64px;
+
+            font-size: 60px;
         }
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+#contact {
+    .flex_column {
+        max-width: 450px;
+        text-align: left;
+        gap: 8px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 135%;
+    }
+
+    input {
+        padding: 12px;
+        padding-right: 128px;
+        display: block;
+    }
+
+    input::placeholder {
+        color: black;
     }
 }
