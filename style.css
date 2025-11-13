@@ -42,6 +42,13 @@
     justify-content: space-between;
 }
 
+.star_holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
 .card_holder {
     display: flex;
     justify-content: space-around;
@@ -208,5 +215,16 @@ nav {
 
     input::placeholder {
         color: black;
+    }
+
+    .brand_icon_holder {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 24px;
+
+        i {
+            font-size: 24px;
+        }
     }
 }
